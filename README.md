@@ -1,1 +1,3 @@
 # sampark
+
+Sampark app guidelines
