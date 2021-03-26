@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/resc-auto"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcf3c5"
+    android:orientation="vertical"
+    tools:ignore="ResAuto">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="186dp"
+        android:layout_height="199dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/school"
+        app1:layout_constraintBottom_toBottomOf="parent"
+        app1:layout_constraintEnd_toEndOf="parent"
+        app1:layout_constraintStart_toStartOf="parent"
+        app1:layout_constraintTop_toTopOf="parent"
+        app1:layout_constraintVertical_bias="0.03"
+        app:layout_constraintHeight_percent=".27" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/design"
+        app1:layout_constraintBottom_toBottomOf="parent"
+        app1:layout_constraintEnd_toEndOf="parent"
+        app1:layout_constraintHeight_percent=".70"
+        app1:layout_constraintHorizontal_bias="0.0"
+        app1:layout_constraintStart_toStartOf="parent"
+        app1:layout_constraintTop_toTopOf="parent"
+        app1:layout_constraintVertical_bias="1.0">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app1:layout_constraintBottom_toBottomOf="parent"
+            app1:layout_constraintEnd_toEndOf="parent"
+            app1:layout_constraintHeight_percent=".78"
+            app1:layout_constraintStart_toStartOf="parent"
+            app1:layout_constraintTop_toBottomOf="@+id/tab_layout"
+            app1:layout_constraintVertical_bias="0">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app1:layout_constraintBottom_toBottomOf="parent"
+            app1:layout_constraintEnd_toEndOf="parent"
+            app1:layout_constraintStart_toStartOf="parent"
+            app1:layout_constraintTop_toTopOf="parent"
+            app1:layout_constraintVertical_bias="0.034">
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

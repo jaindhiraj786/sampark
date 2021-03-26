@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SchoolApp</string>
+    <string name="navigation_drawer_open" translatable="false">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close Navigation Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="login">LogIn</string>
+    <string name="Email">Email</string>
+    <string name="password">Password</string>
+    <string name="get_phone_info">Get Phone Info</string>
+    <string name="login_id" tools:ignore="MissingTranslation">Enter Login Id Here</string>
+
+
+    
+
+    <string-array name="Class">
+        <item>Nursery</item>
+        <item>L.K.G.</item>
+        <item>U.K.G.</item>
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+        <item>VIII</item>
+        <item>IX</item>
+        <item>X</item>
+        <item>XI</item>
+        <item>XII</item>
+    </string-array>
+    <string name="forgot">Forgot Password?</string>
+    
+</resources>
