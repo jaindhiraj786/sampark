@@ -21,6 +21,7 @@ public class AddNotice extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_notice);
+
         edit_title=findViewById(R.id.edit_title);
         edit_information=findViewById(R.id.edir_information);
         buttonNotice=findViewById(R.id.buttonNotice);
