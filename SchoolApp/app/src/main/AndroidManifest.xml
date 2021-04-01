@@ -15,11 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SchoolApp">
-        <activity android:name=".Activity.MainActivity">
 
-        </activity>
-        <activity android:name=".Parents_Welcome_Screen"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,11 +24,15 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".Parents_Welcome_Screen"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
         <activity android:name=".AdminPanel">
 
         </activity>
         <activity android:name=".SplashScreen">
-
 
 
         </activity>
@@ -85,10 +86,13 @@
         <activity android:name=".Notice.AddNotice">
 
         </activity>
-        <activity android:name=".Result.Result">
+
+        <activity android:name=".Profile">
+
+
 
         </activity>
-        <activity android:name=".Result.AddResult">
+        <activity android:name=".Report.Result">
 
 
         </activity>

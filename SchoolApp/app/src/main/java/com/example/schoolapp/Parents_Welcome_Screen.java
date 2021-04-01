@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,11 +26,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.schoolapp.Homework.HomeWork;
 import com.example.schoolapp.Notice.Notes;
-import com.example.schoolapp.Result.Result;
+import com.example.schoolapp.Report.Result;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.messaging.FirebaseMessaging;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -39,6 +42,7 @@ public class Parents_Welcome_Screen extends AppCompatActivity implements Navigat
     ParentsArrayAdapter parentsArrayAdapter = null;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+
 
 
     @Override
@@ -58,6 +62,20 @@ public class Parents_Welcome_Screen extends AppCompatActivity implements Navigat
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbarParent, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+        View header_view = navigationView.getHeaderView(0);
+        TextView textProfile = (TextView) header_view.findViewById(R.id.textProfile);
+
+       String mobile =getIntent().getStringExtra("mobile");
+
+
+        textProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Parents_Welcome_Screen.this,Profile.class);
+                intent.putExtra("mobile",mobile);
+                startActivity(intent);
+            }
+        });
 
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setCheckedItem(R.id.nav_Home);
@@ -162,6 +180,7 @@ public class Parents_Welcome_Screen extends AppCompatActivity implements Navigat
             ParentsInfo pi = parentsInfo.get(position);
             imageMenu.setImageResource(pi.getImage());
             textMenu.setText(pi.getName());
+
 
             return menuPage;
 

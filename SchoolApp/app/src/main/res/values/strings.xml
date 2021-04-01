@@ -32,5 +32,6 @@
         <item>XII</item>
     </string-array>
     <string name="forgot">Forgot Password?</string>
-    
+    <string name="txtStudentAddress">Address</string>
+
 </resources>

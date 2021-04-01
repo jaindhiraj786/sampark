@@ -105,7 +105,7 @@ public class ParentsLogInTab extends Fragment implements View.OnClickListener {
 
         // data base query
 
-        Query checkuser = FirebaseDatabase.getInstance().getReference("student").orderByChild("phonenumber").equalTo(mobilenumber);
+        Query checkuser = FirebaseDatabase.getInstance().getReference("detail").orderByChild("prefered mobile").equalTo(mobilenumber);
         checkuser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -118,6 +118,7 @@ public class ParentsLogInTab extends Fragment implements View.OnClickListener {
 
                         Toast.makeText(getActivity(), "Welcome Successfully", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getActivity(), Parents_Welcome_Screen.class);
+                        intent.putExtra("mobile",email.getText().toString());
                         startActivity(intent);
 
                     } else {
