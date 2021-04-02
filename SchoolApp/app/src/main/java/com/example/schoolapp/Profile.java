@@ -23,7 +23,7 @@ public class Profile extends AppCompatActivity {
 
         textDeparture=findViewById(R.id.textDeparture);
         textaddress=findViewById(R.id.textAddress);
-        textarrival=findViewById(R.id.textarrival);
+        textarrival=findViewById(R.id.textArrival);
         textClass=findViewById(R.id.textClass);
         textFather=findViewById(R.id.textFather);
 

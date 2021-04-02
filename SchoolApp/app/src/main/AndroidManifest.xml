@@ -19,36 +19,20 @@
         <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".Parents_Welcome_Screen"
             android:theme="@style/AppTheme.NoActionBar">
-
-
         </activity>
         <activity android:name=".AdminPanel">
-
         </activity>
-        <activity android:name=".SplashScreen">
-
-
-        </activity>
+        <activity android:name=".SplashScreen"></activity>
         <activity android:name=".Language"
             android:theme="@style/AppTheme.NoActionBar">
-
-
         </activity>
-
         <activity android:name=".PhoneInfo"></activity>
-
-        <activity android:name=".AddUser.AddUser">
-
-
-
-        </activity>
+        <activity android:name=".AddUser.AddUser"></activity>
         <activity android:name=".AddTeacher"></activity>
         <activity android:name=".Attendance"></activity>
         <activity android:name=".Homework.HomeWork">

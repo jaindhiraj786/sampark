@@ -4,71 +4,128 @@
         <ImageView android:id="@+id/imageAdd_Profile" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="16dp" android:src="@drawable/adduser" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginTop="10dp" />
         <ImageButton android:layout_width="150dp" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/add" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.498" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageAdd_Profile" android:id="@+id/buttonAddPhoto" app:layout_goneMarginTop="10dp" android:background="#6A00E5FF" />
         <TextView android:id="@+id/textView23" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:background="#6A00E5FF" android:padding="5dp" android:text="Student Details" android:textColor="@color/black" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/buttonAddPhoto" android:textSize="20sp" app:layout_goneMarginTop="10dp" />
-        <TableLayout android:id="@+id/tableLayout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_marginStart="4dp" android:layout_marginLeft="4dp" android:padding="5dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView23" app:layout_goneMarginTop="10dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:layout_goneMarginTop="10dp">
+
             <TableRow android:layout_marginTop="10dp">
-                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="Name:" />
-                <TextView style="@style/Profile.SubTitle.TextStyle" android:hint="Name Here" android:id="@+id/textStudentName" />
+
+                <TextView
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:text="Name:" />
+
+                <TextView
+                    android:id="@+id/textStudentName"
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:hint="Name Here" />
             </TableRow>
+
             <TableRow android:layout_marginTop="10dp">
-                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="Scholar No.:" />
-                <TextView android:layout_width="wrap_content" style="@style/Profile.SubTitle.TextStyle" android:hint="Scholar Here" android:id="@+id/textScholar" />
+
+                <TextView
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:text="Scholar No.:" />
+
+                <TextView
+                    android:id="@+id/textScholar"
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:hint="Scholar Number" />
             </TableRow>
+
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Class Section:" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Class And Section" android:id="@+id/textClass" />
+
+                <TextView
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:text="Class Section:" />
+
+                <TextView
+                    android:id="@+id/textClass"
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:hint="Class" />
             </TableRow>
+
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="House:" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Houser Here" android:id="@+id/textHouse" />
+
+                <TextView
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:text="House:" />
+
+                <TextView
+                    android:id="@+id/textHouse"
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:hint="House" />
             </TableRow>
+
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Arrival Bus Number:" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Arrival Bus Number" android:id="@+id/textarrival" />
+
+                <TextView
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:text="Arrival Bus Number:" />
+
+                <TextView
+                    android:id="@+id/textArrival"
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:hint="Arrival Bus Number" />
             </TableRow>
+
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Departure Bus Number:" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Departure Bus Number" android:id="@+id/textDeparture" />
+
+                <TextView
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:text="Departure Bus Number:" />
+
+                <TextView
+                    android:id="@+id/textDeparture"
+                    style="@style/Profile.SubTitle.TextStyle"
+                    android:hint="Departure Bus" />
             </TableRow>
         </TableLayout>
+
         <TextView android:id="@+id/textView26" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:background="#6A00E5FF" android:padding="5dp" android:text="Teacher Details" android:textColor="@color/black" android:textStyle="bold" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/tableLayout3" android:textSize="20sp" android:layout_marginTop="10dp" />
         <TableLayout android:id="@+id/tableLayout5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:padding="5dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView26" android:layout_marginTop="10dp">
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Mathematics:" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Maths Teacher" android:id="@+id/textMathsTeacher" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="Mathematics:" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:hint="Teacher" android:id="@+id/textMathsTeacher" />
             </TableRow>
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Science:" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Science Teacher" android:id="@+id/textScienceTeacher" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="Science:" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:hint="Teacher" android:id="@+id/textScienceTeacher" />
             </TableRow>
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Social Studies:" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Social Studies Teacher" android:id="@+id/textSstTeacher" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="Social Studies:" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:hint="Social Studies" android:id="@+id/textSstTeacher" />
             </TableRow>
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Computer (T)" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Computer Teacher" android:id="@+id/textComputerT" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="Computer (T)" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:hint="Computer" android:id="@+id/textComputerT" />
             </TableRow>
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Computer (L):" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Ajay Joshi" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="Computer (L):" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:hint="Ajay"  />
             </TableRow>
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="G.K.:" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="Roshni" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="G.K.:" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="Roshni" />
             </TableRow>
         </TableLayout>
         <TextView android:id="@+id/textView28" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:background="#6A00E5FF" android:padding="5dp" android:text="Contact Detail" android:textColor="@color/black" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/tableLayout5" android:textSize="20sp" android:layout_marginTop="10dp" />
         <TableLayout android:id="@+id/tableLayout7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_marginStart="4dp" android:layout_marginLeft="4dp" android:padding="5dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView28" android:layout_marginTop="10dp">
             <TableRow android:layout_marginTop="10dp">
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="Preferred Email:" android:textColor="@color/black" android:textStyle="bold" />
-            </TableRow>
-            <TableRow android:layout_marginTop="10dp">
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="jaindhiraj786@yahoo.co.in" />
             </TableRow>
             <TableRow android:layout_marginTop="10dp">
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="Preferred Mobile No.:" android:textColor="@color/black" android:textStyle="bold" />
-            </TableRow>
-            <TableRow android:layout_marginTop="10dp">
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="9826679295" />
             </TableRow>
         </TableLayout>
@@ -76,15 +133,12 @@
         <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_marginStart="16dp" android:layout_marginLeft="16dp" android:padding="5dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView30" android:layout_marginTop="10dp">
             <TableRow android:layout_marginTop="10dp">
                 <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Father Detail" android:layout_weight="1" android:textStyle="bold" android:textColor="@color/black" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:id="@+id/textFather" />
             </TableRow>
+
             <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="Father Name" android:id="@+id/textFather" android:layout_weight="1" />
-            </TableRow>
-            <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="9926228522" android:layout_weight="1" />
-            </TableRow>
-            <TableRow android:layout_marginTop="10dp">
-                <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="jaindhiraj786@yahoo.co.in" android:layout_weight="1" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="9926228522" />
+                <TextView style="@style/Profile.SubTitle.TextStyle" android:text="jaindhiraj786@yahoo.co.in"  />
             </TableRow>
             <TableRow android:layout_marginTop="10dp">
                 <TextView
